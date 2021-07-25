@@ -11,8 +11,8 @@ for child in root:
     # for entry in child:
     #     print(entry.tag, entry.text)
     data['name'] = child.find('行政區名').text
-    data['lat'] = child.find('中心點經度').text
-    data['lng'] = child.find('中心點緯度').text
+    data['lat'] = child.find('中心點緯度').text
+    data['lng'] = child.find('中心點經度').text
     data['post'] = child.find('_x0033_碼郵遞區號').text
     data_arr.append(data)
     print(data['name'])
